@@ -4,6 +4,7 @@ import { Mail } from 'lucide-react'
 import * as Input from '@/components/Input'
 import * as FileInput from '@/components/Form/FileInput'
 import { Select } from '@/components/Form/Select'
+import { SelectItem } from '@/components/Form/Select/SelectItem'
 
 export default function Home() {
   return (
@@ -110,7 +111,13 @@ export default function Home() {
               Country
             </label>
             <div>
-              <Select />
+              <Select placeholder="Select a country...">
+                <SelectItem value="br" text="Brazil" />
+                <SelectItem value="en" text="England" />
+                <SelectItem value="fr" text="France" />
+                <SelectItem value="it" text="Italy" />
+                <SelectItem value="us" text="United States" />
+              </Select>
             </div>
           </div>
           <div className="grid grid-cols-form gap-3 pt-5">
@@ -120,7 +127,30 @@ export default function Home() {
             >
               Timezone
             </label>
-            <div></div>
+            <div>
+              <Select placeholder="Select a timezone...">
+                <SelectItem
+                  value="pt"
+                  text="Pacific Time Zone (PT): UTC-07:00"
+                />
+                <SelectItem
+                  value="cet"
+                  text="Central European Time (CET): UTC+01:00"
+                />
+                <SelectItem
+                  value="jst"
+                  text="Japan Standard Time (JST): UTC+09:00"
+                />
+                <SelectItem
+                  value="brt"
+                  text="Horário Padrão do Brasil (BRT): UTC-03:00"
+                />
+                <SelectItem
+                  value="aest"
+                  text="Australian Eastern Standard Time (AEST): UTC+10:00"
+                />
+              </Select>
+            </div>
           </div>
           <div className="grid grid-cols-form gap-3 pt-5">
             <label
