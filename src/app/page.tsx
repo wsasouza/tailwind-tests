@@ -1,7 +1,7 @@
 import { SettingsTabs } from '@/components/SettingsTabs'
 import { Bold, Italic, Link, List, ListOrdered, Mail } from 'lucide-react'
 
-import * as Input from '@/components/Input'
+import * as Input from '@/components/Form/Input'
 import * as FileInput from '@/components/Form/FileInput'
 import { Select } from '@/components/Form/Select'
 import { SelectItem } from '@/components/Form/Select/SelectItem'
