@@ -7,13 +7,17 @@ import { Select } from '@/components/Form/Select'
 import { SelectItem } from '@/components/Form/Select/SelectItem'
 import { TextArea } from '@/components/Form/TextArea'
 import { Button } from '@/components/Button'
+import { ThemeSwitcher } from '@/components/ThemeSwitcher'
 
 export default function Home() {
   return (
     <>
-      <h1 className="text-3xl font-medium text-zinc-900 dark:text-zinc-100">
-        Settings
-      </h1>
+      <div className="flex items-center justify-between">
+        <h1 className="text-3xl font-medium text-zinc-900 dark:text-zinc-100">
+          Settings
+        </h1>
+        <ThemeSwitcher />
+      </div>
       <SettingsTabs />
 
       <div className="mt-6 flex flex-col">
