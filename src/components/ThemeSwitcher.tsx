@@ -20,14 +20,14 @@ export function ThemeSwitcher() {
 
   return (
     <Switch.Root
-      className="relative h-8 w-14 rounded-full border-2 border-zinc-300 bg-zinc-300 dark:border-zinc-700 dark:bg-zinc-950"
+      className="relative h-8 w-14 rounded-full border-2 border-zinc-300 bg-white dark:border-zinc-700 dark:bg-zinc-950"
       onCheckedChange={toggleTheme}
     >
-      <Switch.Thumb className="flex h-7 w-7 items-center justify-center rounded-full bg-zinc-100 transition-transform duration-300 data-[state=checked]:translate-x-6 dark:bg-zinc-800">
+      <Switch.Thumb className="flex h-7 w-7 items-center justify-center rounded-full bg-zinc-200 transition-transform duration-300 data-[state=checked]:translate-x-6 dark:bg-zinc-800">
         {resolvedTheme === 'dark' ? (
-          <Moon className="h-5 w-5 text-zinc-100" />
-        ) : (
           <Sun className="h-5 w-5 text-yellow-500" />
+        ) : (
+          <Moon className="h-5 w-5 text-zinc-800" />
         )}
       </Switch.Thumb>
     </Switch.Root>
